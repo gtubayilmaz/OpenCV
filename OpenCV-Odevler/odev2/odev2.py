@@ -38,7 +38,7 @@ def process_image(image_path):
     circles = cv2.HoughCircles(
         gray, cv2.HOUGH_GRADIENT, 1.2, 30,
         param1=100,  # Kenar algılama için eşik
-        param2=80,   # Çember tespiti eşik değeri (daha yüksek yap)
+        param2=80,   # Çember tespiti eşik değeri 
         minRadius=20,  # Küçük çemberleri hariç tut
         maxRadius=90   # Büyük çemberleri hariç tut
     )
